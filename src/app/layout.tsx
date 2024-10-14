@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Share Our Past",
-  description: "Share Our Past",
+  title: "Share Our Past | Share the Human Stories From Your Family Tree",
+  description: "Share Our Past | Share the Human Stories From Your Family Tree",
 };
 
 export default function RootLayout({
