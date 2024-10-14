@@ -2,11 +2,8 @@
 // import clsx from 'clsx';
 import Image from "next/image";
 
-type LogoProps = {
-      isHome?: boolean;
-  };
 
-export const Logo = ({isHome = false}: LogoProps) => 
+export const Logo = () => 
 <a href="" style={{ color: '#052003', fontFamily: 'fantasy' }} className="no-underline font-extrabold text-1xl leading-5 ml-4">
 <Image
 src="/logo-sop.png"

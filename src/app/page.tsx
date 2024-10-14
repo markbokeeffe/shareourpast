@@ -1,7 +1,6 @@
-import Image from "next/image";
 import clsx from 'clsx';
 import Header from './components/Header';
-import { Roboto, Montserrat } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat ({
   weight: '400',
