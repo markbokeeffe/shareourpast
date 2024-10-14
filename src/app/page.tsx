@@ -20,11 +20,11 @@ export default function Home() {
           <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
       </div>
       <div className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-16 gap-12">
-        <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
+        <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Share your family research with family &amp; friends</h2>
           <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
         </div>
-        <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
+        <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, dates &amp; locations in your tree</h2>
           <p>Lift the veil on individuals in your family tree by telling their human stories and recounting their life experiences in a digital storybook.</p>
         </div>
