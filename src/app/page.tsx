@@ -44,7 +44,13 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full">
-        <h2>Our Plans</h2>
+        <h2>Pricing</h2>
+      </div>
+      <div className="w-full">
+        <h2>Start the Journey</h2>
+      </div>
+      <div className="w-full">
+        <h2>Make an Enquiry</h2>
       </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
 <span> &#169; Share Our Past 2024</span>
