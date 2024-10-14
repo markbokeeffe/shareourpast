@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, dates &amp; locations in your tree</h2>
-          <p>Lift the veil on individuals in our family tree by telling their human stories and recounting their life experiences in a digital storybook.</p>
+          <p>Lift the veil on individuals in your family tree by telling their human stories and recounting their life experiences in a digital storybook.</p>
         </div>
         <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Provide historical context to your family&#39;s story</h2>
