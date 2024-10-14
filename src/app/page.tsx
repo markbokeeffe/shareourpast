@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center text-center p-0")}>
       <Header />
-      <div style={{ fontWeight: 1000 }} className="mt-[70px] bg-white z-40 text-2xl w-full py-4 text-[#007b8b]">
+      <div style={{ fontWeight: 1000 }} className="mt-[70px] bg-white z-40 text-2xl w-full py-4 text-[#007b8b] px-10">
         Share the Human Stories In Your Family Tree
       </div>
       <div className="home-image w-full px-10 lg:px-80 py-24 flex place-items-center justify-center flex-col relative">
