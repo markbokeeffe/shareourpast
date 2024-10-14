@@ -7,7 +7,6 @@ const montserrat = Montserrat ({
   weight: '400',
   subsets: ['latin'],
 })
-// className={clsx( roboto.className, "font-sans flex min-h-screen flex-col items-center lg:justify-between p-0"))
 export default function Home() {
   return (
     <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center text-center p-0")}>
@@ -22,69 +21,34 @@ export default function Home() {
           <a className="text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
       </div>
       <div className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-16 gap-12">
-        <div className="flex flex-col text-white gap-6">
-          <h2 style={{ fontWeight: 1000, fontSize: 22, flexGrow: 1 }}>Share your family research with family &amp; friends</h2>
+        <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Share your family research with family &amp; friends</h2>
           <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
         </div>
-        <div className="flex flex-col text-white gap-6">
-          <h2 style={{ fontWeight: 1000, fontSize: 22, flexGrow: 1 }}>Tell the human stories beyond the names, births &amp; locations</h2>
+        <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, births &amp; locations</h2>
           <p>Lift the veil on individuals in our family tree by telling their human stories and recounting their life experiences in a digital storybook.</p>
         </div>
-        <div className="flex flex-col text-white gap-6">
-          <h2 style={{ fontWeight: 1000, fontSize: 22, flexGrow: 1 }}>Provide historical context to your family&#39;s story</h2>
+        <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Provide historical context to your family&#39;s story</h2>
           <p>Share your family&#39;s story within the historical and social context in which they lived.</p>
         </div>
       </div>
-      <div className="flex flex-col gap-8 items-center sm:items-start">
-        <h3 className="text-[#007b8b]">Share Our Past is led by people experienced &amp; enthusiastic family history researchers who were excited by their family history research findings but who once struggled to find an effective way to share them with wider family and friends.</h3>
-
+      <div className="flex flex-col w-full items-center sm:items-start py-12 px-16">
+        <div className="w-full ">
+          <h2>Historical Expertise </h2>
+          <h3 className="text-[#007b8b]">Share Our Past is led by people experienced &amp; enthusiastic family history researchers and qualified historians.</h3>
+        </div>
+        <div className="w-full">
+          <h2>Simple Process</h2>
+          <h3 className="text-[#007b8b]">The journey from initial engagement with us to being able to share your family&#39;s with others is a simple four-step process.</h3>
+        </div>
+      </div>
+      <div className="w-full">
+        <h2>Our Plans</h2>
       </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+<span> &#169; Share Our Past 2024</span>
       </footer>
     </div>
   );
