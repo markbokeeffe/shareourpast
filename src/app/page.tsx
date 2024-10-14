@@ -25,7 +25,7 @@ export default function Home() {
           <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
         </div>
         <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
-          <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, births &amp; locations</h2>
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, dates &amp; locations in your tree</h2>
           <p>Lift the veil on individuals in our family tree by telling their human stories and recounting their life experiences in a digital storybook.</p>
         </div>
         <div className="flex flex-col text-white gap-6" style={{flexGrow: 1}}>
