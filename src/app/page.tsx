@@ -122,8 +122,8 @@ export default function Home() {
       <div className="w-full">
         <h2>Make an Enquiry</h2>
       </div>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <span> &#169; Share Our Past 2024</span>
+      <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <span style={{ fontWeight: 900 }}> &#169; Share Our Past - 2024</span>
       </footer>
     </div>
   );
