@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-const nodemailer = require('nodemailer');
+import nodemailer from  'nodemailer';
 
-export async function POST(request: any) {
+export async function POST(request: { formData: () => any; }) {
 
     const myEmail = "mark.okeeffe@gmail.com"
 
@@ -40,6 +40,7 @@ export async function POST(request: any) {
                 <p>Message: ${message} </p>
                 `,
             })
+            console.log('mail', mail);
             return NextResponse.json({ message: "Success: email was sent" })
     
         } catch (error) {

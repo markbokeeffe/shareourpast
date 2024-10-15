@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 "use client"
 import { useState } from 'react';
 
@@ -63,6 +63,7 @@ export const Form = () => {
       };
       
 	return (
+        //@ts-ignore
         <form onSubmit={handleSubmit} className="flex flex-col mt-8">
             <fieldset className="flex mb-4 justify-center">
                 <input placeholder="Your Name" className="text-[#007b8b] rounded px-2 py-2 w-64 lg:w-96" type="text" name="name" onChange={handleChange} value={formData.name} />
