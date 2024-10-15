@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Image from "next/image";
 import Header from './components/Header';
+import Form from './components/Form';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat ({
@@ -113,14 +114,21 @@ export default function Home() {
             priority
           />
       </div>
+      <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left">
+        <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Start Your Journey</h2>
+        <div className="flex w-full flex-col lg:flex-row justify-between">
+          <div className="mt-8 lg:max-w-96 w-full">
+            <p>Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
+            <p className="mt-8">We will respond to you within one working day.</p>
+          </div>
+          <Form />
+        </div>
+      </div>
       <div className="w-full">
         <h2>Pricing</h2>
       </div>
-      <div className="w-full">
-        <h2>Start the Journey</h2>
-      </div>
-      <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <span style={{ fontWeight: 900 }}> &#169; Share Our Past - 2024</span>
+      <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
+        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024</span>
       </footer>
     </div>
   );
