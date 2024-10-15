@@ -23,7 +23,7 @@ export async function POST() {
         return Response.json({
             accepted: result.accepted
         })
-    } catch (error) {
+    } catch () {
         return Response.json({ message: 'Uabnable to send email this time'}, {
             status: 500
         })

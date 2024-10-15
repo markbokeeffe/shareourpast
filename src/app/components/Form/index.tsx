@@ -8,8 +8,8 @@ export const Form = () => {
         information: ""
     });
 
-    const [result, setResult] = useState({});
-    const [loading, setLoading] = useState(false);
+    // const [result, setResult] = useState({});
+    // const [loading, setLoading] = useState(false);
 
     const handleChange = (event: { target: { name: string; value: string; }; }) => {
         const { name, value } = event.target;
@@ -31,7 +31,7 @@ export const Form = () => {
         // } catch (e) {
         //     console.error(e);
         // }
-        setLoading(true);
+        // setLoading(true);
         fetch('/api/emails', {
             method: 'POST',
         })
@@ -39,8 +39,8 @@ export const Form = () => {
             console.log('RESPONSE', response);   
         })
         // .then(data => setResult(data))
-        .catch(error => setResult(error))
-        .finally(() => setLoading(false))
+        // .catch(error => setResult(error))
+        // .finally(() => setLoading(false))
       };
       
 	return (
