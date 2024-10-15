@@ -1,14 +1,15 @@
 "use client"
 import { useState } from 'react';
 
-
-
 export const Form = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         information: ""
     });
+
+    const [result, setResult] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (event: { target: { name: string; value: string; }; }) => {
         const { name, value } = event.target;
@@ -17,7 +18,29 @@ export const Form = () => {
 
     const handleSubmit = (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-        console.log(formData);
+        console.log('FORM DATA ',formData);
+        // const formData = new FormData(form);
+
+        // try {
+        //     const response = await fetch("https://example.org/post", {
+        //     method: "POST",
+        //     // Set the FormData instance as the request body
+        //     body: formData,
+        //     });
+        //     console.log(await response.json());
+        // } catch (e) {
+        //     console.error(e);
+        // }
+        setLoading(true);
+        fetch('/api/emails', {
+            method: 'POST',
+        })
+        .then(response => {
+            console.log('RESPONSE', response);   
+        })
+        // .then(data => setResult(data))
+        .catch(error => setResult(error))
+        .finally(() => setLoading(false))
       };
       
 	return (
