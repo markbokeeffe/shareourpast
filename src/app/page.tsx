@@ -19,7 +19,7 @@ export default function Home() {
           <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
           <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
       </div>
-      <div className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-16 gap-12">
+      <div className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12">
         <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Share your family research with family &amp; friends</h2>
           <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
@@ -53,7 +53,7 @@ export default function Home() {
         <h2>Make an Enquiry</h2>
       </div>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-<span> &#169; Share Our Past 2024</span>
+        <span> &#169; Share Our Past 2024</span>
       </footer>
     </div>
   );
