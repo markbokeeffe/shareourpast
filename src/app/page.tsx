@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from "next/image";
 import Header from './components/Header';
 import { Montserrat } from 'next/font/google';
 
@@ -8,12 +9,12 @@ const montserrat = Montserrat ({
 })
 export default function Home() {
   return (
-    <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center text-center p-0")}>
+    <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center p-0")}>
       <Header />
       <div style={{ fontWeight: 1000 }} className="mt-[80px] bg-white z-40 text-xl lg:text-2xl w-full py-4 text-[#007b8b] px-4 lg:px-10 flex justify-center">
         <span className="block">Share the Human Stories From Your Family Tree</span>
       </div>
-      <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center justify-center flex-col relative">
+      <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center  justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
         <div className="flex justify-center flex-col z-40">        
           <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
@@ -33,15 +34,37 @@ export default function Home() {
           <p>Share your family&#39;s story within the historical and social context in which they lived.</p>
         </div>
       </div>
-      <div className="flex flex-col w-full items-center sm:items-start py-12 px-16">
-        <div className="w-full ">
-          <h2>Historical Expertise </h2>
-          <h3 className="text-[#007b8b]">Share Our Past is led by people experienced &amp; enthusiastic family history researchers and qualified historians.</h3>
-        </div>
-        <div className="w-full">
-          <h2>Simple Process</h2>
-          <h3 className="text-[#007b8b]">The journey from initial engagement with us to being able to share your family&#39;s with others is a simple four-step process.</h3>
-        </div>
+      <div className="flex flex-col lg:flex-row w-full items-center py-12 px-4 lg:px-16 gap-6">
+
+          <div className="flex flex-col gap-6">
+            <div className="w-full text-[#007b8b]">
+              <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Genealogy &amp; History at our Heart</h2>
+              <h3>We are led by experienced &amp; enthusiastic family history researchers and qualified historians, with a passion for learning and sharing knowledge before it is lost to time.</h3>
+            </div>
+
+            <div className="w-full text-[#007b8b]">
+              <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Respecting Our Past</h2>
+              <h3 className="">We have a core value of respect those ancestors whose stories are being told.  By sharing their experiences, their memory lives on. </h3>
+            </div>
+
+            <div className="w-full text-[#007b8b]">
+              <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Simple Process</h2>
+              <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple four-step process.</h3>
+            </div>
+
+            <div className="w-full text-[#007b8b]">
+              <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Responsive Layouts</h2>
+              <h3 className="">Your digital storybook will be fully responsive: meaning that it will work desktop, tablet and mobile devices.</h3>
+            </div>
+          </div>
+          <Image
+            src="/greatGrandfather.png"
+            alt="Great Grandfather"
+            // className="w-full max-w-sm"
+            width="300"
+            height="0"
+            priority
+          />
       </div>
       <div className="w-full">
         <h2>Pricing</h2>

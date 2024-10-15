@@ -21,7 +21,7 @@ body {
 }
 
 .home-image:before{
-  background-image: url('./components/assets/group-photo.jpg');
+  background-image: url('./assets/group-photo.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   content: ' ';
