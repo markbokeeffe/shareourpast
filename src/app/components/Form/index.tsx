@@ -1,3 +1,4 @@
+// @ts-nocheck
 "use client"
 import { useState } from 'react';
 
@@ -8,17 +9,29 @@ export const Form = () => {
         information: ""
     });
 
-    // const [result, setResult] = useState({});
-    // const [loading, setLoading] = useState(false);
 
     const handleChange = (event: { target: { name: string; value: string; }; }) => {
         const { name, value } = event.target;
         setFormData((prevState) => ({ ...prevState, [name]: value }));
     };
 
-    const handleSubmit = (event: { preventDefault: () => void; }) => {
+
+    const handleSubmit = async (event: {
+        target: HTMLFormElement | undefined; preventDefault: () => void; 
+}) => {
         event.preventDefault();
-        console.log('FORM DATA ',formData);
+        const formData = new FormData(event.target);
+        try {
+            await fetch('/api', {
+                method: 'POST',
+                body: formData,
+            })
+            console.log("HERE")
+        } catch (error) {
+            console.log("THERE", error)
+        }
+        // event.preventDefault();
+        // console.log('FORM DATA ',formData);
         // const formData = new FormData(form);
 
         // try {
@@ -32,12 +45,18 @@ export const Form = () => {
         //     console.error(e);
         // }
         // setLoading(true);
-        fetch('/api/emails', {
-            method: 'POST',
-        })
-        .then(response => {
-            console.log('RESPONSE', response);   
-        })
+
+        // await fetch('/api', {
+        //     method: 'POST',
+        // })
+        // .then(response => {
+        //     console.log('RESPONSE', response);   
+        // })
+        // .catch(error => {
+        //     console.log("ERROR", error)
+        // })
+
+
         // .then(data => setResult(data))
         // .catch(error => setResult(error))
         // .finally(() => setLoading(false))
