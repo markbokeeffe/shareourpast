@@ -15,7 +15,7 @@ export default function Home() {
         <span className="block">Share the Human Stories From Your Family Tree</span>
       </div>
       <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center justify-center flex-col relative">
-        <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-40 lg:opacity-50" />
+        <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
         <div className="flex justify-center flex-col z-40">        
           <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
           <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
