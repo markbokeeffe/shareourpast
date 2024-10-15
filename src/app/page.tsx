@@ -15,7 +15,7 @@ export default function Home() {
         <span className="block">Share the Human Stories From Your Family Tree</span>
       </div>
       <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center justify-center flex-col relative">
-        <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
+        <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-40 lg:opacity-50" />
         <div className="flex justify-center flex-col z-40">        
           <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
           <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
@@ -70,7 +70,7 @@ export default function Home() {
               />
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Respecting Our Past</h2>
-                <h3 className="">We have a core value of respect those ancestors whose stories are being told.  By sharing their experiences, their memory lives on. </h3>
+                <h3 className="">We have a core value of respect for those ancestors whose stories are being told.  By sharing their experiences, their memory lives on. </h3>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
               />
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Responsive Layouts</h2>
-                <h3 className="">Your digital storybook will be fully responsive: meaning that it will work desktop, tablet and mobile devices.</h3>
+                <h3 className="">Your digital storybook will be fully responsive: meaning that it will work on desktop, tablet and phones.</h3>
               </div>
             </div>
           </div>
@@ -118,9 +118,6 @@ export default function Home() {
       </div>
       <div className="w-full">
         <h2>Start the Journey</h2>
-      </div>
-      <div className="w-full">
-        <h2>Make an Enquiry</h2>
       </div>
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <span style={{ fontWeight: 900 }}> &#169; Share Our Past - 2024</span>
