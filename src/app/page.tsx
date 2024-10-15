@@ -34,8 +34,15 @@ export default function Home() {
           <p>Share your family&#39;s story within the historical and social context in which they lived.</p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row w-full items-center py-12 px-4 lg:px-16 gap-6">
-
+      <div className="flex flex-col lg:flex-row w-full items-center py-12 px-4 lg:px-16 gap-6 bg-white">
+            <Image
+            src="/family.png"
+            alt="Family"
+            className="block lg:hidden"
+            width="300"
+            height="0"
+            priority
+          />
           <div className="flex flex-col gap-6">
             <div className="w-full text-[#007b8b]">
               <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Genealogy &amp; History at our Heart</h2>
@@ -60,7 +67,7 @@ export default function Home() {
           <Image
             src="/greatGrandfather.png"
             alt="Great Grandfather"
-            // className="w-full max-w-sm"
+            className="hidden lg:block"
             width="300"
             height="0"
             priority
