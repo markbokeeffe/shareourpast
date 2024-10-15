@@ -31,7 +31,7 @@ export const Form = () => {
             <fieldset className="flex justify-center">
                 <textarea 
                     placeholder="Please provide some information about the family tree information that you would like to incorporate into your digital booklet" 
-                    className="text-[#007b8b] rounded px-2 resize-none w-96 h-36" rows={6} cols={40} name="information" onChange={handleChange} value={formData.information}>
+                    className="text-[#007b8b] rounded resize-none w-96 h-36 px-2 py-2" rows={6} cols={40} name="information" onChange={handleChange} value={formData.information}>
                 </textarea>
             </fieldset>
             <fieldset className="flex justify-center">
