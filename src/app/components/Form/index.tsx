@@ -16,55 +16,8 @@ export const Form = () => {
     };
 
 
-    const handleSubmit = async (event: {
-        target: HTMLFormElement | undefined; preventDefault: () => void; 
-}) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        try {
-            await fetch('/api', {
-                method: 'POST',
-                body: formData,
-            })
-            console.log("HERE")
-        } catch (error) {
-            console.log("THERE", error)
-        }
-        // event.preventDefault();
-        // console.log('FORM DATA ',formData);
-        // const formData = new FormData(form);
-
-        // try {
-        //     const response = await fetch("https://example.org/post", {
-        //     method: "POST",
-        //     // Set the FormData instance as the request body
-        //     body: formData,
-        //     });
-        //     console.log(await response.json());
-        // } catch (e) {
-        //     console.error(e);
-        // }
-        // setLoading(true);
-
-        // await fetch('/api', {
-        //     method: 'POST',
-        // })
-        // .then(response => {
-        //     console.log('RESPONSE', response);   
-        // })
-        // .catch(error => {
-        //     console.log("ERROR", error)
-        // })
-
-
-        // .then(data => setResult(data))
-        // .catch(error => setResult(error))
-        // .finally(() => setLoading(false))
-      };
-      
 	return (
-        //@ts-ignore
-        <form onSubmit={handleSubmit} className="flex flex-col mt-8">
+        <form onSubmit={()=> null} className="flex flex-col mt-8">
             <fieldset className="flex mb-4 justify-center">
                 <input placeholder="Your Name" className="text-[#007b8b] rounded px-2 py-2 w-64 lg:w-96" type="text" name="name" onChange={handleChange} value={formData.name} />
             </fieldset>
