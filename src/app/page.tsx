@@ -46,14 +46,14 @@ export default function Home() {
           />
           <div className="flex flex-col gap-6">
             <div className="w-full text-[#007b8b] flex flex-col lg:flex-row items-center lg:items-start">
-              <Image
+              <div style={{ width: '100px', minWidth: '100px', maxWidth: '100px' }} className="lg:mr-[20px]"><Image
                 src="/genealogy.svg"
                 alt="Genealoy"
                 className="lg:mr-6 lg:mt-2"
                 width="100"
                 height="0"
                 priority
-              />
+              /></div>
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Genealogy &amp; History at our Heart</h2>
                 <h3>We are led by experienced &amp; enthusiastic family history researchers and qualified historians, with a passion for learning and sharing knowledge before it is lost to time.</h3>
@@ -61,14 +61,14 @@ export default function Home() {
             </div>
 
             <div className="w-full text-[#007b8b] flex flex-col lg:flex-row items-center lg:items-start">
-              <Image
+              <div style={{ width: '100px', minWidth: '100px', maxWidth: '100px' }} className="lg:mr-[20px]"><Image
                 src="/respect.svg"
                 alt="Respect"
                 className="lg:mr-6 lg:mt-1"
                 width="100"
                 height="0"
                 priority
-              />
+              /></div>
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Respecting Our Past</h2>
                 <h3 className="">We have a core value of respect for those ancestors whose stories are being told.  By sharing their experiences, their memory lives on. </h3>
@@ -76,14 +76,14 @@ export default function Home() {
             </div>
 
             <div className="w-full text-[#007b8b] flex flex-col lg:flex-row items-center lg:items-start">
-             <Image
+              <div style={{ width: '100px', minWidth: '100px', maxWidth: '100px' }} className="lg:mr-[20px]"><Image
                 src="/process.svg"
                 alt="Process"
                 className="lg:mr-6 lg:mt-1"
                 width="100"
                 height="0"
                 priority
-              />
+              /></div>
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Simple Process</h2>
                 <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple four-step process.</h3>
@@ -91,14 +91,14 @@ export default function Home() {
             </div>
 
             <div className="w-full text-[#007b8b] flex flex-col lg:flex-row items-center lg:items-start">
-              <Image
+              <div style={{ width: '100px', minWidth: '100px', maxWidth: '100px' }} className="lg:mr-[20px]"><Image
                 src="/responsive.svg"
                 alt="Responsive"
                 className="lg:mr-6 lg:mt-1"
                 width="100"
                 height="0"
                 priority
-              />
+              /></div>
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Responsive Layouts</h2>
                 <h3 className="">Your digital storybook will be fully responsive: meaning that it will work on desktop, tablet and phones.</h3>
