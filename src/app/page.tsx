@@ -114,6 +114,135 @@ export default function Home() {
             priority
           />
       </div>
+
+      <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left">
+        <h2 className="mb-6" style={{ fontWeight: 1000, fontSize: 22 }}>Sample Digital Stories</h2>
+        <p className="mb-6">Below are example digital storybooks that have already been created:</p>
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
+          <a href="https://www.mullinsfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+            <Image
+              src="/mullins.png"
+              alt="The Mullins Soldiers of Clonmel"
+              width="300"
+              height="0"
+              priority
+            />
+            <p>The Mullins Soldiers of Clonmel</p>
+          </a>
+
+          <a href="https://www.maxeyfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+            <Image
+              src="/maxey.png"
+              alt="The Maxey Family of Clonmel"
+              width="300"
+              height="0"
+              priority
+            />
+            <p>The Maxey Family of Clonmel</p>
+          </a>
+
+          <a href="https://www.cunninghamfamilydublin.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+            <Image
+              src="/cunningham.png"
+              alt="The Cunningham Family of Drumcondra, Dublin"
+              width="300"
+              height="0"
+              priority
+            />
+            <p>The Cunninghams of Drumcondra</p>
+          </a>
+
+        </div>
+      </div>
+
+      <div className="process w-full py-12 px-4 lg:px-16 flex justify-center flex-col relative">
+        <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
+        <div className="flex justify-center flex-col z-40 w-full">    
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="process" className="w-full text-white text-left mb-6">Process</h2>
+          <p className="text-white mb-8"  style={{ fontWeight: 1000 }}>The journey from initial engagement with us to being able to share your digital storybook with your family &amp; friends can be completed in a simple set of steps:</p>
+          <div className="flex flex-col md:flex-row gap-6 w-full justify-between">
+            
+            
+    
+
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }} className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 1:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p  style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">Contact us using the form on this page</p>
+                {/* <p>Include information regarding what you would like to be included in your storybook.</p> */}
+              </div>
+            </div>
+
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }}className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 2:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">We will respond to you and propose a plan</p>
+                {/* <p>Based upon the information that you have provided, we will respond to you with a suggested plan for your digital storybook.</p> */}
+              </div>
+            </div>
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }}className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 3:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">Provide us with your research findings</p>
+                {/* <p>Provide us with the information that you would like to be included with your storybook, including any images.</p> */}
+
+                </div>
+            </div>
+
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }}className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 4:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">We will build your storybook</p>
+                {/* <p>Using the information that you have provied, we will build your digital storybook so that you can review it and offer feedback.</p> */}
+              </div>
+            </div>
+
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }}className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 5:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">Provide your feedback</p>
+                {/* <p>You provide feedback on your storybook and we make any alterations required.</p> */}
+              </div>
+            </div>
+
+
+            <div className="border-1 w-full lg:w-[300px] overflow-hidden rounded-3xl border-2 border-white pb-2 bg-[#007b8b] text-white">
+              <h3 style={{ fontWeight: 1000, fontSize: 14 }}className="flex flex-row w-full bg-white text-[#007b8b] py-2 px-4 justify-between items-center">
+                 Step 6:
+              </h3>
+
+              <div className="px-4 pt-4">
+                <p style={{ fontWeight: 1000 }} className="w-full mb-4 pb-2">We place your storybook live</p>
+                {/* <p>After you have reviewed and approved your storybook, we will place it live using your own uniqute website address.  You can then enjoy and share this with your family &amp; friends.</p> */}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
       <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left" id="start-journey">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Start Your Journey</h2>
         <div className="flex w-full flex-col lg:flex-row justify-between">
@@ -124,6 +253,11 @@ export default function Home() {
           <Form />
         </div>
       </div>
+
+
+
+        
+        
       <div className="text-[#007b8b] flex flex-col w-full items-center text-center lg:text-left py-12 px-4 lg:px-16 gap-6 bg-white">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="pricing" className="w-full">Pricing</h2>
         <div className="flex flex-col lg:flex-row gap-6 w-full justify-between">
@@ -133,7 +267,7 @@ export default function Home() {
               <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€140</h2>
             </div>
 
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 text-left">
               <p className="w-full text-center border-b-2 mb-4 pb-2">Up to &amp; including <span style={{ fontWeight: 1000, fontSize: 18 }}>6</span> pages</p>
               <p>Includes:</p>
               <ul>
@@ -149,7 +283,7 @@ export default function Home() {
               <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 2</h3>
               <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€160</h2>
             </div>
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 text-left">
               <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>7 &amp; 11</span> pages</p>
               <p>Includes:</p>
               <ul>
@@ -166,7 +300,7 @@ export default function Home() {
               <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 3</h3>
               <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€190</h2>
             </div>
-            <div className="px-4 pt-4">
+            <div className="px-4 pt-4 text-left">
               <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>12 &amp; 16</span> pages</p>
               <p>Includes:</p>
               <ul>
@@ -179,6 +313,7 @@ export default function Home() {
 
         </div>
       </div>
+
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
         <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024</span>
       </footer>
