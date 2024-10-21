@@ -15,7 +15,7 @@ const CookieConsent = () => {
     setCookie("localConsent", "true", {});
   };
 
-  if (!showConsent) {
+  if (showConsent) {
     return null;
   }
 
