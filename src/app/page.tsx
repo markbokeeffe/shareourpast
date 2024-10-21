@@ -12,10 +12,7 @@ const montserrat = Montserrat ({
 
 
 export default function Home() {
-  const goTo = (elem: string) => {
-    const element = document.getElementById(elem);
-    if(element) element.scrollIntoView();
-  }
+
   return (
     <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center p-0")}>
       <Header />
