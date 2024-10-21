@@ -74,7 +74,7 @@ export const Navigation = () => {
                 <button className="cursor-pointer hover:underline" onClick={() => goTo('pricing')}>Pricing</button>
               </li>
               <li>
-                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md hover:bg-[#007b8b] hover:text-white border-2 border-white" style={{ fontWeight: 1000 }} onClick={() => goTo('start-your-journey')}>Start Your Journey</button>
+                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md hover:bg-[#007b8b] hover:text-white border-2 border-white" style={{ fontWeight: 1000 }} onClick={() => goTo('start-journey')}>Start Your Journey</button>
               </li>
             </ul>}
           </nav>
