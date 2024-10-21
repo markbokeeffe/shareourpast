@@ -119,10 +119,11 @@ export default function Home() {
         <h2 className="mb-6" style={{ fontWeight: 1000, fontSize: 22 }} id="samples">Sample Digital Stories</h2>
         <p className="mb-6">Below are example digital storybooks that have already been created:</p>
         <div className="flex flex-col lg:flex-row justify-between gap-8">
-          <a href="https://www.mullinsfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+          <a href="https://www.mullinsfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center hover:underline">
             <Image
               src="/mullins.png"
               alt="The Mullins Soldiers of Clonmel"
+              className="border-4 border-white rounded-md"
               width="300"
               height="0"
               priority
@@ -130,10 +131,11 @@ export default function Home() {
             <p>The Mullins Soldiers of Clonmel</p>
           </a>
 
-          <a href="https://www.maxeyfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+          <a href="https://www.maxeyfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center hover:underline">
             <Image
               src="/maxey.png"
               alt="The Maxey Family of Clonmel"
+              className="border-4 border-white rounded-md"
               width="300"
               height="0"
               priority
@@ -141,10 +143,11 @@ export default function Home() {
             <p>The Maxey Family of Clonmel</p>
           </a>
 
-          <a href="https://www.cunninghamfamilydublin.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
+          <a href="https://www.cunninghamfamilydublin.com/" target="_blank" className="flex flex-col text-center justify-center items-center hover:underline">
             <Image
               src="/cunningham.png"
               alt="The Cunningham Family of Drumcondra, Dublin"
+              className="border-4 border-white rounded-md"
               width="300"
               height="0"
               priority

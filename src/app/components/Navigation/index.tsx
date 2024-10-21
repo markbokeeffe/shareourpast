@@ -62,19 +62,19 @@ export const Navigation = () => {
             {<ul className="DESKTOP-MENU hidden space-x-8 lg:flex font-medium lg:items-center">
 
               <li>
-                <button className="cursor-pointer" onClick={() => goTo('about')}>About</button>
+                <button className="cursor-pointer hover:underline" onClick={() => goTo('about')}>About</button>
               </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <button className="cursor-pointer" onClick={() => goTo('samples')}>Samples</button>
-              </li>
-              <li>
-                <button className="cursor-pointer" onClick={() => goTo('process')}>Process</button>
+              <li className="">
+                <button className="cursor-pointer hover:underline" onClick={() => goTo('samples')}>Samples</button>
               </li>
               <li>
-                <button className="cursor-pointer" onClick={() => goTo('pricing')}>Pricing</button>
+                <button className="cursor-pointer hover:underline" onClick={() => goTo('process')}>Process</button>
               </li>
               <li>
-                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md" style={{ fontWeight: 1000 }} onClick={() => goTo('start-your-journey')}>Start Your Journey</button>
+                <button className="cursor-pointer hover:underline" onClick={() => goTo('pricing')}>Pricing</button>
+              </li>
+              <li>
+                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md hover:bg-[#007b8b] hover:text-white border-2 border-white" style={{ fontWeight: 1000 }} onClick={() => goTo('start-your-journey')}>Start Your Journey</button>
               </li>
             </ul>}
           </nav>
