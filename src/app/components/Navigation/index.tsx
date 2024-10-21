@@ -61,7 +61,7 @@ export const Navigation = () => {
                 <button className="cursor-pointer" onClick={() => goTo('about')}>About</button>
               </li>
               <li>
-                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md" onClick={() => goTo('start-your-journey')}>Start Your Journey</button>
+                <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md" style={{ fontWeight: 1000 }} onClick={() => goTo('start-your-journey')}>Start Your Journey</button>
               </li>
             </ul>}
           </nav>
