@@ -21,7 +21,7 @@ export default function Home() {
           <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
           <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
       </div>
-      <div className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12 text-center lg:text-left">
+      <div id="about" className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12 text-center lg:text-left">
         <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Share your family research with family &amp; friends</h2>
           <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
@@ -86,7 +86,7 @@ export default function Home() {
               /></div>
               <div>
                 <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Simple Process</h2>
-                <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple four-step process.</h3>
+                <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple and straightforward process.</h3>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export default function Home() {
         </div>
       </div>
       <div className="text-[#007b8b] flex flex-col w-full items-center text-center lg:text-left py-12 px-4 lg:px-16 gap-6 bg-white">
-        <h2 style={{ fontWeight: 1000, fontSize: 22 }} className="w-full">Pricing</h2>
+        <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="pricing" className="w-full">Pricing</h2>
         <div className="flex flex-col lg:flex-row gap-6 w-full justify-between">
           <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
             <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
