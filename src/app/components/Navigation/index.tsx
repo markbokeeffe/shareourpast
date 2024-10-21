@@ -50,7 +50,7 @@ export const Navigation = () => {
                     <button className="cursor-pointer" onClick={() => goTo('samples')}>Samples</button>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
-                    <button className="cursor-pointer" onClick={() => goTo('process')}>Process</button>
+                    <button className="cursor-pointer" onClick={() => goTo('process')}>6-Step Process</button>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
                     <button className="cursor-pointer" onClick={() => goTo('pricing')}>Pricing</button>
@@ -68,7 +68,7 @@ export const Navigation = () => {
                 <button className="cursor-pointer hover:underline" onClick={() => goTo('samples')}>Samples</button>
               </li>
               <li>
-                <button className="cursor-pointer hover:underline" onClick={() => goTo('process')}>Process</button>
+                <button className="cursor-pointer hover:underline" onClick={() => goTo('process')}>6-Step Process</button>
               </li>
               <li>
                 <button className="cursor-pointer hover:underline" onClick={() => goTo('pricing')}>Pricing</button>
