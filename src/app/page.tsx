@@ -124,8 +124,60 @@ export default function Home() {
           <Form />
         </div>
       </div>
-      <div className="w-full">
-        <h2>Pricing</h2>
+      <div className="text-[#007b8b] flex flex-col w-full items-center text-center lg:text-left py-12 px-4 lg:px-16 gap-6 bg-white">
+        <h2 style={{ fontWeight: 1000, fontSize: 22 }} className="w-full">Pricing</h2>
+        <div className="flex flex-col lg:flex-row gap-6 w-full justify-between">
+          <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
+            <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
+              <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 1</h3>
+              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€140</h2>
+            </div>
+
+            <div className="px-4 pt-4">
+              <p className="w-full text-center border-b-2 mb-4 pb-2">Up to &amp; including <span style={{ fontWeight: 1000, fontSize: 18 }}>6</span> pages</p>
+              <p>Includes:</p>
+              <ul>
+                <li>- Creation of digial storybook</li>
+                <li>- Hosting</li>
+                <li>- Plus €20 for domain hosting annually thereafter</li>
+              </ul>
+              </div>
+          </div>
+
+          <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
+            <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
+              <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 2</h3>
+              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€160</h2>
+            </div>
+            <div className="px-4 pt-4">
+              <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>7 &amp; 11</span> pages</p>
+              <p>Includes:</p>
+              <ul>
+                <li>- Creation of digial storybook</li>
+                <li>- Hosting</li>
+                <li>- Plus €20 for domain hosting annually thereafter</li>
+              </ul>
+              </div>
+          </div>
+
+
+          <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
+            <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
+              <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 3</h3>
+              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€190</h2>
+            </div>
+            <div className="px-4 pt-4">
+              <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>12 &amp; 16</span> pages</p>
+              <p>Includes:</p>
+              <ul>
+                <li>- Creation of digial storybook</li>
+                <li>- Hosting</li>
+                <li>- Plus €20 for domain hosting annually thereafter</li>
+              </ul>
+              </div>
+          </div>
+
+        </div>
       </div>
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
         <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024</span>
