@@ -90,8 +90,8 @@ export default function Home() {
                 priority
               /></div>
               <div>
-                <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Simple Process</h2>
-                <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple and straightforward process.</h3>
+                <h2 className="mb-2" style={{ fontWeight: 1000, fontSize: 22 }}>Simple 6-Step Process</h2>
+                <h3 className="">The journey from initial engagement with us to being able to share your family&#39;s human stories with others is a simple six-step process.</h3>
               </div>
             </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
       <div className="process w-full py-12 px-4 lg:px-16 flex justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
         <div className="flex justify-center flex-col z-40 w-full">    
-          <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="process" className="w-full text-white text-left mb-6">Process</h2>
+          <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="process" className="w-full text-white text-left mb-6">Simple 6-Step Process</h2>
           <p className="text-white mb-8"  style={{ fontWeight: 1000 }}>The journey from initial engagement with us to being able to share your digital storybook with your family &amp; friends can be completed in a simple set of steps:</p>
           <div className="flex flex-col md:flex-row gap-6 w-full justify-between">
             
