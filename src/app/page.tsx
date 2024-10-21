@@ -114,7 +114,7 @@ export default function Home() {
             priority
           />
       </div>
-      <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left">
+      <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left" id="start-journey">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Start Your Journey</h2>
         <div className="flex w-full flex-col lg:flex-row justify-between">
           <div className="mt-8 lg:max-w-96 w-full">
