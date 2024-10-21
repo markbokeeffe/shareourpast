@@ -16,14 +16,14 @@ export default function Home() {
   return (
     <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center p-0")}>
       <Header />
-      <div style={{ fontWeight: 1000 }} className="mt-[80px] bg-white z-40 text-xl lg:text-2xl w-full py-4 text-[#007b8b] px-4 lg:px-10 flex justify-center text-center">
-        <span className="block">Share the Human Stories From Your Family Tree</span>
+      <div style={{ fontWeight: 1000 }} className="mt-[80px] bg-white z-40 text-xl lg:text-2xl w-full py-4 text-[#007b8b] px-4 lg:px-10 flex flex-col justify-center text-center">
+        <span className="block">Share the Human Stories From Your Family Tree In 6 Simple Steps</span>
       </div>
       <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
           <div className="flex justify-center flex-col z-40">        
             <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
-            <span className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree in <span style={{ fontWeight: 1000 }}>six simple steps.</span></span>
+            <span className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</span>
           </div>
       </div>
       <div id="about" className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12 text-center lg:text-left">
