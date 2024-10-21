@@ -8,7 +8,14 @@ const montserrat = Montserrat ({
   weight: '400',
   subsets: ['latin'],
 })
+
+
+
 export default function Home() {
+  const goTo = (elem: string) => {
+    const element = document.getElementById(elem);
+    if(element) element.scrollIntoView();
+  }
   return (
     <div className={clsx( montserrat.className, "font-sans flex min-h-screen flex-col items-center p-0")}>
       <Header />
@@ -17,14 +24,15 @@ export default function Home() {
       </div>
       <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
-        <div className="flex justify-center flex-col z-40">        
-          <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
-          <a className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</a></div>
+          <div className="flex justify-center flex-col z-40">        
+            <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
+            <span className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree in <span style={{ fontWeight: 1000 }}>six simple steps.</span></span>
+          </div>
       </div>
       <div id="about" className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12 text-center lg:text-left">
         <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Share your family research with family &amp; friends</h2>
-          <p>Share your exciting findings with family &amp; friends by collating your research into a beatifully presented digital format.</p>
+          <p>Share your exciting findings with others by collating your research into a beautifully presented digital format.</p>
         </div>
         <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
           <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Tell the human stories beyond the names, dates &amp; locations in your tree</h2>
@@ -287,7 +295,7 @@ export default function Home() {
               <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€160</h2>
             </div>
             <div className="px-4 pt-4 text-left">
-              <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>7 &amp; 11</span> pages</p>
+              <p className="w-full text-center border-b-2 mb-4 pb-2">From <span style={{ fontWeight: 1000, fontSize: 18 }}>7 up to 11</span> pages</p>
               <p>Includes:</p>
               <ul>
                 <li>- Creation of digital storybook</li>
@@ -304,7 +312,7 @@ export default function Home() {
               <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€190</h2>
             </div>
             <div className="px-4 pt-4 text-left">
-              <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>12 &amp; 16</span> pages</p>
+              <p className="w-full text-center border-b-2 mb-4 pb-2">From <span style={{ fontWeight: 1000, fontSize: 18 }}>12 up to 16</span> pages</p>
               <p>Includes:</p>
               <ul>
                 <li>- Creation of digital storybook</li>
