@@ -274,7 +274,7 @@ export default function Home() {
               <p className="w-full text-center border-b-2 mb-4 pb-2">Up to &amp; including <span style={{ fontWeight: 1000, fontSize: 18 }}>6</span> pages</p>
               <p>Includes:</p>
               <ul>
-                <li>- Creation of digial storybook</li>
+                <li>- Creation of digital storybook</li>
                 <li>- Hosting</li>
                 <li>- Plus €20 for domain hosting annually thereafter</li>
               </ul>
@@ -290,7 +290,7 @@ export default function Home() {
               <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>7 &amp; 11</span> pages</p>
               <p>Includes:</p>
               <ul>
-                <li>- Creation of digial storybook</li>
+                <li>- Creation of digital storybook</li>
                 <li>- Hosting</li>
                 <li>- Plus €20 for domain hosting annually thereafter</li>
               </ul>
@@ -307,7 +307,7 @@ export default function Home() {
               <p className="w-full text-center border-b-2 mb-4 pb-2">Between <span style={{ fontWeight: 1000, fontSize: 18 }}>12 &amp; 16</span> pages</p>
               <p>Includes:</p>
               <ul>
-                <li>- Creation of digial storybook</li>
+                <li>- Creation of digital storybook</li>
                 <li>- Hosting</li>
                 <li>- Plus €20 for domain hosting annually thereafter</li>
               </ul>
