@@ -47,6 +47,9 @@ export const Navigation = () => {
                     <button className="cursor-pointer" onClick={() => goTo('about')}>About</button>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
+                    <button className="cursor-pointer" onClick={() => goTo('samples')}>Samples</button>
+                  </li>
+                  <li className="border-b border-gray-400 my-8 uppercase">
                     <button className="cursor-pointer" onClick={() => goTo('process')}>Process</button>
                   </li>
                   <li className="border-b border-gray-400 my-8 uppercase">
@@ -60,6 +63,9 @@ export const Navigation = () => {
 
               <li>
                 <button className="cursor-pointer" onClick={() => goTo('about')}>About</button>
+              </li>
+              <li className="border-b border-gray-400 my-8 uppercase">
+                <button className="cursor-pointer" onClick={() => goTo('samples')}>Samples</button>
               </li>
               <li>
                 <button className="cursor-pointer" onClick={() => goTo('process')}>Process</button>

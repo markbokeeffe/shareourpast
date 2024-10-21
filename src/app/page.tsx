@@ -116,7 +116,7 @@ export default function Home() {
       </div>
 
       <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left">
-        <h2 className="mb-6" style={{ fontWeight: 1000, fontSize: 22 }}>Sample Digital Stories</h2>
+        <h2 className="mb-6" style={{ fontWeight: 1000, fontSize: 22 }} id="samples">Sample Digital Stories</h2>
         <p className="mb-6">Below are example digital storybooks that have already been created:</p>
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           <a href="https://www.mullinsfamilyclonmel.com/" target="_blank" className="flex flex-col text-center justify-center items-center">
