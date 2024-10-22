@@ -6,8 +6,20 @@ export const Form = () => {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
-        information: ""
+        message: ""
     });
+
+    const onSubmit = async (event: { preventDefault: () => void; target: HTMLFormElement | undefined; }) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        await fetch('/api/contact', {
+            method: 'post',
+            body: formData,
+           });
+
+      };
 
 
     const handleChange = (event: { target: { name: string; value: string; }; }) => {
@@ -17,7 +29,7 @@ export const Form = () => {
 
 
 	return (
-        <form onSubmit={()=> null} className="flex flex-col mt-8">
+        <form onSubmit={onSubmit} className="flex flex-col mt-8">
             <fieldset className="flex mb-4 justify-center">
                 <input placeholder="Your Name" className="text-[#007b8b] rounded px-2 py-2 w-64 lg:w-96" type="text" name="name" onChange={handleChange} value={formData.name} />
             </fieldset>
@@ -27,7 +39,7 @@ export const Form = () => {
             <fieldset className="flex justify-center">
                 <textarea 
                     placeholder="Please provide some information about the family tree information that you would like to incorporate into your digital booklet" 
-                    className="text-[#007b8b] rounded resize-none w-64 lg:w-96 h-40 px-2 py-2" rows={8} cols={20} name="information" onChange={handleChange} value={formData.information}>
+                    className="text-[#007b8b] rounded resize-none w-64 lg:w-96 h-40 px-2 py-2" rows={8} cols={20} name="message" onChange={handleChange} value={formData.message}>
                 </textarea>
             </fieldset>
             <fieldset className="flex justify-center">

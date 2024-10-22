@@ -4,11 +4,22 @@ import nodemailer from "nodemailer";
 const user = process.env.EMAIL;
 const pass = process.env.PASSWORD;
 
-export async function POST(request: Request) {
+export async function POST(request: { formData: () => any; }) {
     try {
-        const { name, email, message } = await request.json();
+        const formData = await request.formData();
+        const name = formData.get('name')
+        const email = formData.get('email')
+        const message = formData.get('message')
 
-        const transporter = nodemailer.createTransport({
+        const mailOptions = {
+            from: user,
+            to: user,
+            subject: "Share Your Past - Start Your Journey Form Submission",
+            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        };
+
+
+          const transporter = nodemailer.createTransport({
             service: "forwardemail",
             host: "smtp.forwardemail.net",
             port: 587,
@@ -19,13 +30,7 @@ export async function POST(request: Request) {
             },
           });
 
-          const mailOptions = {
-            from: user,
-            to: "mark.okeeffe@gmail.com",
-            subject: "New message from your-website",
-            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-          };
-
+      
           await transporter.sendMail(mailOptions);
 
           return NextResponse.json(
@@ -34,6 +39,6 @@ export async function POST(request: Request) {
           );
     } catch (error) {
         console.log(error);
-      return new NextResponse("Failed to send message.", { status: 500 })
+      return new NextResponse("Failed to send email.", { status: 500 })
     }
 }
