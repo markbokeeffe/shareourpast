@@ -47,15 +47,18 @@ export async function POST(request: { formData: () => any; }) {
         await new Promise((resolve,reject)=>{
 
 
-          transporter.sendMail(mailOptions, (err, info) => {
-            if (err) {
-                console.error(err);
-                reject(err);
-            } else {
-                console.log(info);
-                resolve(info);
-            }    
-      })
+    //       transporter.sendMail(mailOptions, (err, info) => {
+    //         if (err) {
+    //             console.error(err);
+    //             reject(err);
+    //         } else {
+    //             console.log(info);
+    //             resolve(info);
+    //         }    
+    //   })
+
+
+      transporter.sendMail(mailOptions);
 
         //   await new Promise((resolve, reject) => {
         //     // verify connection configuration
