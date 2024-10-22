@@ -40,20 +40,23 @@ export const Navigation = () => {
                   </svg>
                 </div>
                 <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px] text-[#007b8b]">
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="border-b border-gray-400 my-8">
                     <button className="cursor-pointer" onClick={() => goTo('start-journey')}>Start Your Journey</button>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="border-b border-gray-400 my-8">
                     <button className="cursor-pointer" onClick={() => goTo('about')}>About</button>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="border-b border-gray-400 my-8">
                     <button className="cursor-pointer" onClick={() => goTo('samples')}>Samples</button>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="border-b border-gray-400 my-8">
                     <button className="cursor-pointer" onClick={() => goTo('process')}>6-Step Process</button>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase">
+                  <li className="border-b border-gray-400 my-8">
                     <button className="cursor-pointer" onClick={() => goTo('pricing')}>Pricing</button>
+                  </li>
+                  <li className="border-b border-gray-400 my-8">
+                    <a className="cursor-pointer" href="mailto: info@sharemypast.com">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -72,6 +75,9 @@ export const Navigation = () => {
               </li>
               <li>
                 <button className="cursor-pointer hover:underline" onClick={() => goTo('pricing')}>Pricing</button>
+              </li>
+              <li>
+                <a className="cursor-pointer hover:underline" href="mailto: info@sharemypast.com">Contact Us</a>
               </li>
               <li>
                 <button className="cursor-pointer bg-white text-[#007b8b] px-2 py-2 rounded-md hover:bg-[#007b8b] hover:text-white border-2 border-white" style={{ fontWeight: 1000 }} onClick={() => goTo('start-journey')}>Start Your Journey</button>
