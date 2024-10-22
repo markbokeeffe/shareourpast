@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Image from "next/image";
 import Header from './components/Header';
 import Form from './components/Form';
+import CTA from './components/CTA';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat ({
@@ -19,12 +20,13 @@ export default function Home() {
       <div style={{ fontWeight: 1000 }} className="mt-[80px] bg-white z-40 text-xl lg:text-2xl w-full py-4 text-[#007b8b] px-4 lg:px-10 flex flex-col justify-center text-center">
         <span className="block">Share the Human Stories From Your Family Tree In 6 Simple Steps</span>
       </div>
-      <div className="home-image w-full px-4 lg:px-80 py-24 flex place-items-center text-center justify-center flex-col relative">
+      <div className="home-image w-full px-4 lg:px-80 py-16 flex place-items-center text-center justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
           <div className="flex justify-center flex-col z-40">        
             <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
-            <span className="text-xl lg:text-2xl mt-12 text-[#007b8b] font-black bg-white px-6 py-8 rounded-2xl leading-8 lg:lleading-10">Create an easily shareable digital story of a branch or individual from your family tree.</span>
+            <CTA />
           </div>
+          <button></button>
       </div>
       <div id="about" className="flex flex-col lg:flex-row bg-[#007b8b] w-full text-white justify-center py-12 px-4 lg:px-16 gap-12 text-center lg:text-left">
         <div className="flex flex-col text-white gap-6 border-b-2 lg:border-b-0 pb-12 lg:pb-0" style={{flexGrow: 1}}>
