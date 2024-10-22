@@ -256,6 +256,7 @@ export default function Home() {
         <div className="flex w-full flex-col lg:flex-row justify-between">
           <div className="mt-8 lg:max-w-96 w-full">
             <p>Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
+            <p className="mt-8">Alternatively, email us at <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a>, providing your name and some information about the family tree information that you would like to incorporate into your digital booklet. </p>
             <p className="mt-8">We will respond to you within one working day.</p>
           </div>
           <Form />
@@ -323,7 +324,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
-        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024</span>
+        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024 | <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
       </footer>
     </div>
   );
