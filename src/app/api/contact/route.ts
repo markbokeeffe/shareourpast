@@ -11,11 +11,18 @@ export async function POST(request: { formData: () => any; }) {
         const email = formData.get('email')
         const message = formData.get('message')
 
-        const mailOptions = {
+        const mailOptionsToSOP = {
             from: user,
             to: user,
-            subject: "Share Your Past - Start Your Journey Form Submission",
-            text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+            subject: "Share Our Past - Start Your Journey Form Submission",
+            text: `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`,
+        };
+
+        const mailOptionsToUser = {
+            from: user,
+            to: email,
+            subject: "Share Our Past - Thank You For Contacting Us",
+            text: `Dear ${name},\n\nThank you for contacting us regarding your digital storybook.  We will assess this and respond to you within two working days.\n\nKind regards,\n\nThe Team at Share Our Past`,
         };
 
         const transporter = nodemailer.createTransport({
@@ -31,7 +38,19 @@ export async function POST(request: { formData: () => any; }) {
 
 
         await new Promise((resolve,reject)=>{
-          transporter.sendMail(mailOptions, (err, info) => {
+          transporter.sendMail(mailOptionsToSOP, (err, info) => {
+                if (err) {
+                    console.error(err);
+                    reject(err);
+                } else {
+                    console.log(info);
+                    resolve(info);
+                }    
+            })
+        });
+
+        await new Promise((resolve,reject)=>{
+            transporter.sendMail(mailOptionsToUser, (err, info) => {
             if (err) {
                 console.error(err);
                 reject(err);
@@ -40,7 +59,7 @@ export async function POST(request: { formData: () => any; }) {
                 resolve(info);
             }    
         })
-        });
+    });
 
 
     return NextResponse.json(

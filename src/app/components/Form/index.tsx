@@ -58,7 +58,7 @@ export const Form = () => {
                     />
                 </fieldset>
             </form>
-            {!isSent && <p className="mt-6 w-64 lg:w-96 border-2 border-white px-4 py-4 rounded">Thank you for sending your information.  We will be in touch within the next two working days.</p>}
+            {isSent && <p className="mt-6 w-64 lg:w-96 border-2 border-white px-4 py-4 rounded">Thank you for sending your information.  We will be in touch within the next two working days.</p>}
         </div>
 	);
 };
