@@ -58,7 +58,7 @@ export async function POST(request: { formData: () => any; }) {
     //   })
 
 
-      transporter.sendMail(mailOptions);
+    //   transporter.sendMail(mailOptions);
 
         //   await new Promise((resolve, reject) => {
         //     // verify connection configuration
