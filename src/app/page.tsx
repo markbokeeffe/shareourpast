@@ -254,7 +254,7 @@ export default function Home() {
       <div className="bg-[#007b8b] w-full px-8 lg:px-16 py-8 text-white text-center lg:text-left" id="start-journey">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Start Your Journey</h2>
         <div className="flex w-full flex-col lg:flex-row justify-between">
-          <div className="mt-8 lg:max-w-96 w-full">
+          <div className="mt-8 lg:max-w-96 w-full text-left">
             <p>Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
             <p className="mt-8">Alternatively, email us at <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a>, providing your name and some information about the family tree information that you would like to incorporate into your digital booklet. </p>
             <p className="mt-8">We will respond to you within two working days.</p>
