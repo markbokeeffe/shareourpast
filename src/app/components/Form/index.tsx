@@ -53,7 +53,8 @@ export const Form = () => {
                     <input 
                         style={{ fontWeight: 1000 }} 
                         className="rounded justify-center mt-8 cursor-pointer h-12 px-4 bg-white hover:bg-[#007b8b] text-[#007b8b] hover:text-white hover:border-white hover:border-2 w-80 lg:w-96" 
-                        type="submit" 
+                        type="submit"
+                        disabled={isSending ? true : false}
                         value={isSending ? 'Sending...' : 'Start Your Journey'}
                     />
                 </fieldset>
