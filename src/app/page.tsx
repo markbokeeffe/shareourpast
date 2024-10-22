@@ -257,7 +257,7 @@ export default function Home() {
           <div className="mt-8 lg:max-w-96 w-full">
             <p>Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
             <p className="mt-8">Alternatively, email us at <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a>, providing your name and some information about the family tree information that you would like to incorporate into your digital booklet. </p>
-            <p className="mt-8">We will respond to you within one working day.</p>
+            <p className="mt-8">We will respond to you within two working days.</p>
           </div>
           <Form />
         </div>
