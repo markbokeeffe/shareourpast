@@ -44,7 +44,7 @@ export async function POST(request: { formData: () => any; }) {
             });
         });
 
-        await new Promise((resolve,reject)=>{
+        // await new Promise((resolve,reject)=>{
 
 
     //       transporter.sendMail(mailOptions, (err, info) => {
@@ -95,7 +95,7 @@ export async function POST(request: { formData: () => any; }) {
             //         resolve(info);
             //     }
             // });
-        });
+        // });
     
         //   await transporter.sendMail(mailOptions);
 
