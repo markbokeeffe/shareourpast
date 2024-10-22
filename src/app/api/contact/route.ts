@@ -20,8 +20,7 @@ export async function POST(request: { formData: () => any; }) {
             text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
         };
 
-return new Promise((resolve,reject)=>{
-          const transporter = nodemailer.createTransport({
+        const transporter = nodemailer.createTransport({
             service: "forwardemail",
             host: "smtp.forwardemail.net",
             port: 587,
@@ -31,6 +30,22 @@ return new Promise((resolve,reject)=>{
               pass,
             },
           });
+
+        await new Promise((resolve, reject) => {
+            // verify connection configuration
+            transporter.verify(function (error, success) {
+                if (error) {
+                    console.log(error);
+                    reject(error);
+                } else {
+                    console.log("Server is ready to take our messages");
+                    resolve(success);
+                }
+            });
+        });
+
+        await new Promise((resolve,reject)=>{
+
 
           transporter.sendMail(mailOptions, (err, info) => {
             if (err) {
