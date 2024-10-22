@@ -5,8 +5,6 @@ const user = process.env.EMAIL;
 const pass = process.env.PASSWORD;
 
 export async function POST(request: { formData: () => any; }) {
-
-
     try {
         const formData = await request.formData();
         const name = formData.get('name')
@@ -31,22 +29,8 @@ export async function POST(request: { formData: () => any; }) {
             },
           });
 
-        // await new Promise((resolve, reject) => {
-        //     // verify connection configuration
-        //     transporter.verify(function (error, success) {
-        //         if (error) {
-        //             console.log(error);
-        //             reject(error);
-        //         } else {
-        //             console.log("Server is ready to take our messages");
-        //             resolve(success);
-        //         }
-        //     });
-        // });
 
         await new Promise((resolve,reject)=>{
-
-
           transporter.sendMail(mailOptions, (err, info) => {
             if (err) {
                 console.error(err);
@@ -55,51 +39,9 @@ export async function POST(request: { formData: () => any; }) {
                 console.log(info);
                 resolve(info);
             }    
-      })
+        })
+        });
 
-    });
-
-
-    //   transporter.sendMail(mailOptions);
-
-        //   await new Promise((resolve, reject) => {
-        //     // verify connection configuration
-        //     transporter.verify(function (error, success) {
-        //         if (error) {
-        //             console.log(error);
-        //             reject(error);
-        //         } else {
-        //             console.log("Server is ready to take our messages");
-        //             resolve(success);
-        //         }
-        //     });
-        // });
-
-
-
-        //   await new Promise((resolve, reject) => {
-        //     // send mail
-        //     transporter.sendMail(mailOptions, (err, info) => {
-        //         if (err) {
-        //             console.error(err);
-        //             reject(err);
-        //         } else {
-        //             console.log(info);
-        //             resolve(info);
-        //         }    
-        //   })
-            // transporter.sendMail(mailData, (err, info) => {
-            //     if (err) {
-            //         console.error(err);
-            //         reject(err);
-            //     } else {
-            //         console.log(info);
-            //         resolve(info);
-            //     }
-            // });
-        // });
-    
-        //   await transporter.sendMail(mailOptions);
 
     return NextResponse.json(
             { message: "Message sent successfully" },
