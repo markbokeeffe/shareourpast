@@ -335,7 +335,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
-        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Markeva Ltd t/a Share Our Past - 2024 <span className="mx-4">|</span> <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
+        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; 2024 by Markeva Ltd t/a Share Our Past <span className="mx-4">|</span> <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
       </footer>
     </div>
   );
