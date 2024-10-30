@@ -334,6 +334,34 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="my-16">
+        <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="pricing" className="w-full text-[#007b8b]">Follow Us</h2>
+        <div className="flex flex-row justify-center items-center">
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=61567435334966">
+            <div style={{ width: '48px', minWidth: '48px', maxWidth: '100px' }} className="lg:mr-[20px]">
+              <Image
+                src="/icons8-facebook.svg"
+                alt="Facebook"
+                className="lg:mr-6 lg:mt-2"
+                width="100"
+                height="0"
+                priority
+            /></div>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/shareourpast">
+            <div style={{ width: '53px', minWidth: '53px', maxWidth: '100px' }} className="lg:mr-[20px]">
+              <Image
+                src="/icons8-instagram.svg"
+                alt="Instagram"
+                className="lg:mr-6 lg:mt-2"
+                width="100"
+                height="0"
+                priority
+            /></div>
+          </a>
+        </div>
+      </div>
+
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
         <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; 2024 by Markeva Ltd t/a Share Our Past <span className="mx-4">|</span> <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
       </footer>
