@@ -27,7 +27,7 @@ const CookieConsent = () => {
   return (
     <div className="fixed inset-0 bg-slate-700 bg-opacity-70 z-50">
       <div className="fixed bottom-0 left-0 right-0 flex flex-col lg:flex-row gap-4 items-center justify-between px-4 py-8 bg-gray-100">
-        <span className="text-black text-base mr-16">
+        <span className="text-black text-base lg:mr-16 text-center lg:text-left">
           We use cookies to better understand our users and so tailor our site to better meet your needs.  However, you can choose to accept these or not.
         </span>
         <span className="flex flex-row gap-4">
