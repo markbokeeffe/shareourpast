@@ -334,7 +334,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="my-16">
+      <div className="my-16 bg-white">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="pricing" className="w-full text-[#007b8b]">Follow Us</h2>
         <div className="flex flex-row justify-center items-center">
           <a target="_blank" href="https://www.facebook.com/profile.php?id=61567435334966">
