@@ -31,10 +31,10 @@ const CookieConsent = () => {
           We use cookies to better understand our users and so tailor our site to better meet your needs.  However, you can choose to accept these or not.
         </span>
         <span className="flex flex-row gap-4">
-          <button className="bg-[#007b8b] py-2 px-2 rounded text-white w-[130px]" onClick={() => acceptCookie()}>
+          <button className="bg-[#007b8b] py-2 px-2 rounded text-white w-[130px] border-2 border-[#007b8b] font-bold" onClick={() => acceptCookie()}>
             Accept
           </button>
-          <button className="bg-[#007b8b] py-2 px-2 rounded text-white w-[130px]" onClick={() => rejectCookie()}>
+          <button className="bg-white hover:bg-[#007b8b] text-[#007b8b] hover:text-white py-2 px-2 rounded w-[130px] border-2 border-[#007b8b] font-bold" onClick={() => rejectCookie()}>
             Don&#39;t Accept
           </button>
         </span>
