@@ -5,6 +5,7 @@ import { useState } from 'react';
 export const Form = () => {
     const [formData, setFormData] = useState({
         name: "",
+        country: "",
         email: "",
         message: ""
     });
@@ -39,6 +40,9 @@ export const Form = () => {
             <form onSubmit={onSubmit} className="flex flex-col mt-8">
                 <fieldset className="flex mb-4 justify-center">
                     <input placeholder="Your Name" className="text-[#007b8b] rounded px-2 py-2 w-80 lg:w-96" type="text" name="name" onChange={handleChange} value={formData.name} />
+                </fieldset>
+                <fieldset className="flex mb-4 justify-center">
+                    <input placeholder="Your Country" className="text-[#007b8b] rounded px-2 py-2 w-80 lg:w-96" type="text" name="country" onChange={handleChange} value={formData.country} />
                 </fieldset>
                 <fieldset className="flex mb-4 justify-center">
                     <input placeholder="Your Email" className="text-[#007b8b] rounded px-2 py-2 w-80 lg:w-96" type="email" name="email" onChange={handleChange} value={formData.email} />

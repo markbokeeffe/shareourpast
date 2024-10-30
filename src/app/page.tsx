@@ -275,7 +275,10 @@ export default function Home() {
           <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
             <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
               <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 1</h3>
-              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€140</h2>
+              <span className="flex flex-col text-right">
+                <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€140</h2>
+                <span style={{ fontSize: 12 }}>+ Sales Tax</span>
+              </span>
             </div>
 
             <div className="px-4 pt-4 text-left">
@@ -292,7 +295,10 @@ export default function Home() {
           <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
             <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
               <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 2</h3>
-              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€160</h2>
+              <span className="flex flex-col text-right">
+                <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€160</h2>
+                <span style={{ fontSize: 12 }}>+ Sales Tax</span>
+              </span>
             </div>
             <div className="px-4 pt-4 text-left">
               <p className="w-full text-center border-b-2 mb-4 pb-2">From <span style={{ fontWeight: 1000, fontSize: 18 }}>7 up to 11</span> pages</p>
@@ -309,7 +315,10 @@ export default function Home() {
           <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
             <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
               <h3 style={{ fontWeight: 1000, fontSize: 18 }}>Plan 3</h3>
-              <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€190</h2>
+              <span className="flex flex-col text-right">
+                <h2 style={{ fontWeight: 1000, fontSize: 18 }}>€190</h2>
+                <span style={{ fontSize: 12 }}>+ Sales Tax</span>
+              </span>
             </div>
             <div className="px-4 pt-4 text-left">
               <p className="w-full text-center border-b-2 mb-4 pb-2">From <span style={{ fontWeight: 1000, fontSize: 18 }}>12 up to 16</span> pages</p>
@@ -326,7 +335,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-[#007b8b] w-full text-white row-start-3 flex gap-6 flex-wrap items-center justify-center py-2">
-        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Share Our Past - 2024 | <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
+        <span style={{ fontWeight: 900, fontSize: 11 }}> &#169; Markeva Ltd t/a Share Our Past - 2024 <span className="mx-4">|</span> <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a></span>
       </footer>
     </div>
   );

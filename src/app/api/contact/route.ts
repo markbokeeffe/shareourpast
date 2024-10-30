@@ -9,13 +9,14 @@ export async function POST(request: { formData: () => any; }) {
         const formData = await request.formData();
         const name = formData.get('name')
         const email = formData.get('email')
+        const country = formData.get('country')
         const message = formData.get('message')
 
         const mailOptionsToSOP = {
             from: user,
             to: user,
             subject: "Share Our Past - Start Your Journey Form Submission",
-            text: `Name: ${name}\n\nEmail: ${email}\n\nMessage: ${message}`,
+            text: `Name: ${name}\n\nEmail: ${email}\n\nCountry: ${country}\n\nMessage: ${message}`,
         };
 
         const mailOptionsToUser = {
