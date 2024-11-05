@@ -15,15 +15,15 @@ export async function POST(request: { formData: () => any; }) {
         const mailOptionsToSOP = {
             from: user,
             to: user,
-            subject: "Share Our Past - Start Your Journey Form Submission",
+            subject: "Share Our History - Start Your Journey Form Submission",
             text: `Name: ${name}\n\nEmail: ${email}\n\nCountry: ${country}\n\nMessage: ${message}`,
         };
 
         const mailOptionsToUser = {
             from: user,
             to: email,
-            subject: "Share Our Past - Thank You For Contacting Us",
-            text: `Dear ${name},\n\nThank you for contacting us regarding your digital storybook.  We will assess this and respond to you within two working days.\n\nKind regards,\n\nThe Team at Share Our Past`,
+            subject: "Share Our History - Thank You For Contacting Us",
+            text: `Dear ${name},\n\nThank you for contacting us regarding your digital storybook.  We will assess this and respond to you within two working days.\n\nKind regards,\n\nThe Team at Share Our History`,
         };
 
         const transporter = nodemailer.createTransport({
