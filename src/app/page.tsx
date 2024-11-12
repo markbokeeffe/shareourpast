@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from './components/Header';
 import Form from './components/Form';
 import CTA from './components/CTA';
+import Christmas from './components/Christmas';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat ({
@@ -22,7 +23,9 @@ export default function Home() {
       </div>
       <div className="home-image w-full px-4 lg:px-80 py-16 flex place-items-center text-center justify-center flex-col relative">
         <div className="absolute h-full w-full bg-[#007b8b] top-0 left-0 opacity-50" />
-          <div className="flex justify-center flex-col z-40">        
+        
+          <div className="flex justify-center flex-col z-40">       
+          <Christmas />
             <span className="text-xl lg:text-2xl font-black text-white leading-8 lg:leading-10">Do you wish to be able to easily share what you have uncovered in your family history research with family and friends?</span>
             <CTA />
           </div>
@@ -257,7 +260,8 @@ export default function Home() {
         <h2 style={{ fontWeight: 1000, fontSize: 22 }}>Start Your Journey</h2>
         <div className="flex w-full flex-col lg:flex-row justify-between">
           <div className="mt-8 lg:max-w-96 w-full text-left">
-            <p>Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
+            <p><strong>Avail of our Special Christmas Offer with 10% of each of the prices for all of our plans below for a limited time!</strong></p>
+            <p className="mt-8">Simply enter your information into this form in order to begin your journey to sharing your uncovered family history research.</p>
             <p className="mt-8">Alternatively, email us at <a className="hover:underline" href="mailto: info@sharemypast.com">info@sharemypast.com</a>, providing your name and some information about the family tree information that you would like to incorporate into your digital booklet. </p>
             <p className="mt-8">We will respond to you within two working days.</p>
           </div>
@@ -271,6 +275,7 @@ export default function Home() {
         
       <div className="text-[#007b8b] flex flex-col w-full items-center text-center lg:text-left py-12 px-4 lg:px-16 gap-6 bg-white">
         <h2 style={{ fontWeight: 1000, fontSize: 22 }} id="pricing" className="w-full">Pricing</h2>
+        <h3>Avail of our <strong>Special Christmas Offer</strong> with 10% of each of the prices for all of our plans below for a limited time!</h3>
         <div className="flex flex-col lg:flex-row gap-6 w-full justify-between">
           <div className="border-1 w-full lg:w-[300px] rounded-md border-2 border-[#007b8b] pb-4">
             <div className="flex flex-row w-full bg-[#007b8b] text-white py-4 px-4 justify-between items-center">
